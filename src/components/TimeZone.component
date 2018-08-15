@@ -1,0 +1,16 @@
+<apex:component controller="testcontroller">
+    <apex:attribute name="timeZoneNumber" 
+                    description="The controller for the page."
+                    type="Integer" 
+                    required="true"
+                    assignTo="{!numberZone}"/>
+       
+    
+    <apex:pageBlock title="Time In Zone GMT {!timeZoneNumber}">   
+        <apex:pageBlockSection >
+            <apex:outputText value="{!timeZone} Time"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    
+</apex:component>
